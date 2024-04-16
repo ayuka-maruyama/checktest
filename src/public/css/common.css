@@ -1,6 +1,7 @@
 .header {
     width: 100%;
     border-bottom: 1px solid #c9c6c6;
+    position: relative;
 }
 
 .header__inner {
