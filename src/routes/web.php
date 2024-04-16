@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ConfirmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,6 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::get('/', [ContactController::class, 'index']);
-Route::post('/confirm', [ContactController::class, 'confirm']);
-Route::get('/confirm/thanks', [ContactController::class, 'thanks']);
-Route::get('/', [ContactController::class, 'correction']);
+Route::post('/confirm', [ConfirmController::class, 'confirm']);
+Route::get('/confirm/thanks', [ConfirmController::class, 'thanks']);
+Route::get('/', [ConfirmController::class, 'correction']);
