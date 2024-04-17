@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ConfirmController extends Controller
 {
-        public function confirm(Request $request)
+    public function confirm(Request $request)
     {
         $first_name = $request->input('first-name');
         $last_name = $request->input('last-name');
